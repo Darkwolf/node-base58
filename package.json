@@ -1,0 +1,35 @@
+{
+  "name": "@darkwolf/base58",
+  "version": "100.0.0",
+  "description": "Base58",
+  "type": "module",
+  "main": "./lib/index.cjs",
+  "exports": {
+    "import": "./lib/index.mjs",
+    "require": "./lib/index.cjs"
+  },
+  "engines": {
+    "node": ">=12"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Darkwolf/node-base58.git"
+  },
+  "keywords": [
+    "base58",
+    "encoder",
+    "decoder"
+  ],
+  "author": "Pavel Wolf",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Darkwolf/node-base58/issues"
+  },
+  "homepage": "https://github.com/Darkwolf/node-base58#readme",
+  "dependencies": {
+    "@darkwolf/primordials": "^1.1.9"
+  }
+}
