@@ -40,6 +40,8 @@ const buffer = Uint8Array.of(0x00, 0x02, 0x04, 0x08, 0x0f, 0x1f, 0x3f, 0x7f, 0xf
 const encodedBuffer = Base58.encode(buffer) // => <Uint8Array 31 4c 5a 43 78 72 75 44 44 4c 32>
 const decodedBuffer = Base58.decode(encodedBuffer) // => <Uint8Array 00 02 04 08 0f 1f 3f 7f ff>
 
+const encodedBufferToString = Base58.encodeToString(buffer) // => '1LZCxruDDL2'
+const decodedBufferFromString = Base58.decodeFromString(encodedBufferToString) // => <Uint8Array 00 02 04 08 0f 1f 3f 7f ff>
 // Custom Alphabet
 const dw58 = new Base58('AveDarkwo1f23456789BCEFGHJKLMNPQRSTUVWXYZbcdghijmnpqstuxyz')
 
@@ -63,6 +65,9 @@ const decEmojis = dw58.decodeText(encEmojis) // => '🐺🐺🐺'
 
 const encBuffer = dw58.encode(buffer) // => <Uint8Array 41 42 52 32 78 6e 73 33 33 42 76>
 const decBuffer = dw58.decode(encBuffer) // => <Uint8Array 00 02 04 08 0f 1f 3f 7f ff>
+
+const encBufferToString = dw58.encodeToString(buffer) // => 'ABR2xns33Bv'
+const decBufferFromString = dw58.decodeFromString(encBufferToString) // => <Uint8Array 00 02 04 08 0f 1f 3f 7f ff>
 ```
 ## [API Documentation](https://github.com/Darkwolf/node-base58/blob/master/docs/API.md)
 ## Contact Me
