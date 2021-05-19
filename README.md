@@ -42,6 +42,7 @@ const decodedBuffer = Base58.decode(encodedBuffer) // => <Uint8Array 00 02 04 08
 
 const encodedBufferToString = Base58.encodeToString(buffer) // => '1LZCxruDDL2'
 const decodedBufferFromString = Base58.decodeFromString(encodedBufferToString) // => <Uint8Array 00 02 04 08 0f 1f 3f 7f ff>
+
 // Custom Alphabet
 const dw58 = new Base58('AveDarkwo1f23456789BCEFGHJKLMNPQRSTUVWXYZbcdghijmnpqstuxyz')
 
