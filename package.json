@@ -1,6 +1,6 @@
 {
   "name": "@darkwolf/base58",
-  "version": "100.0.2",
+  "version": "100.0.3",
   "description": "Base58",
   "type": "module",
   "main": "./lib/index.cjs",
@@ -30,6 +30,6 @@
   },
   "homepage": "https://github.com/Darkwolf/node-base58#readme",
   "dependencies": {
-    "@darkwolf/primordials": "^1.1.9"
+    "@darkwolf/primordials": "^1.2.0"
   }
 }
