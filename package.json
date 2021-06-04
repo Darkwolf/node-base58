@@ -1,6 +1,6 @@
 {
   "name": "@darkwolf/base58",
-  "version": "100.0.6",
+  "version": "100.0.7",
   "description": "Base58",
   "type": "module",
   "main": "./lib/index.cjs",
